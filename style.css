@@ -520,7 +520,7 @@ h3 {
     height: 6vh;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 380px) {
   #hright img {
     width: 39vw;
     height: 22vh;
