@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   color: #d4d4d8;
-  font-family: "gilroy";
 }
 html,
 body {
@@ -13,8 +12,6 @@ body {
 
 body {
   background-color: #18181b;
-
-  font-family: Arial, sans-serif;
 }
 
 /* Navbar */
@@ -46,7 +43,7 @@ nav h2 {
 }
 #header {
   display: flex;
-  gap: 20vw;
+  gap: 10vw;
   align-items: center;
   margin: 5vw 0;
 }
@@ -331,29 +328,39 @@ h3 {
 
   #hleft h2 {
     font-size: 8vw;
+    margin-bottom: 0.5vw;
   }
 
   #hleft h3 {
     font-size: 5vw;
+    margin-bottom: 0.5vw;
   }
   #icons {
     justify-content: center;
+    margin-bottom: 0.5vw;
   }
   #icons a {
     font-size: 6vw;
   }
 
   #hero p {
-    width: 100%;
-    font-size: 3vw;
+    width: 80%;
+    font-size: 3.5vw;
     text-align: center;
-    margin-top: 1vw;
+    margin: 1vw 0;
+    opacity: 1;
   }
   #way {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2vw 0;
+    gap: 3vw;
+    margin-bottom: 2vw;
+  }
+  #way a {
+    padding: 2vw;
+    opacity: 0.8;
+    font-size: 3.5vw;
   }
 
   #hright img {
@@ -487,5 +494,53 @@ h3 {
     margin-top: 3vw;
     width: 35vw;
     padding: 1vw 2vw;
+  }
+}
+@media (max-width: 480px) {
+  #hright img {
+    width: 28vw;
+    height: 24vh;
+  }
+
+  #circle1,
+  #circle2,
+  #circle3 {
+    width: 8vw;
+    height: 6vh;
+  }
+  #circle1::before,
+  #circle2::before {
+    content: "";
+    width: 0.1vw;
+    height: 20vh;
+  }
+  #circle3::before {
+    content: "";
+    width: 0.1vw;
+    height: 6vh;
+  }
+}
+@media (max-width: 300px) {
+  #hright img {
+    width: 39vw;
+    height: 22vh;
+  }
+
+  #circle1,
+  #circle2,
+  #circle3 {
+    width: 10vw;
+    height: 3vh;
+  }
+  #circle1::before,
+  #circle2::before {
+    content: "";
+    width: 0.1vw;
+    height: 8vh;
+  }
+  #circle3::before {
+    content: "";
+    width: 0.1vw;
+    height: 6vh;
   }
 }
